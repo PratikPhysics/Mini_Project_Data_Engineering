@@ -20,15 +20,3 @@ The app is deployed on **Streamlit** and connected to a **MySQL database** for d
 🔗 [Streamlit App](https://miniprojectdataengineering-loan-pratik.streamlit.app/)  
 
 ---
-
-## 📂 Project Structure
-├── app.py # Streamlit application
-├── train_model.py # ML training script
-├── load_data_mysql.py # Script to load data into MySQL
-├── applicant_info.json # Applicant dataset
-├── financial_info.json # Financial dataset
-├── loan_info.json # Loan dataset
-├── model.pkl # Trained ML model
-├── scaler.pkl # Scaler for preprocessing
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
