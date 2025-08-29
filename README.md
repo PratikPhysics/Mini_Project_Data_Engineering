@@ -4,6 +4,16 @@ This project is an **end-to-end Data Engineering & Machine Learning pipeline** t
 The workflow involves **loading JSON data into MySQL**, training a classification model in Python, saving the model as a `.pickle` file, and finally deploying it as a **Streamlit web app**.
 
 ---
+## 🔄 Workflow Diagram
+
+```mermaid
+flowchart LR
+    A[📂 JSON Files] -->|Load with Python| B[(🗄️ MySQL Database)]
+    B -->|Fetch Data| C[⚙️ Python Preprocessing]
+    C --> D[🤖 ML Model Training]
+    D -->|Save| E[(📦 model.pkl & scaler.pkl)]
+    E -->|Use in| F[🌐 Streamlit App]
+    F -->|Predict| G[✅ Loan Status]
 
 ## 📌 Project Workflow
 
@@ -31,13 +41,3 @@ The workflow involves **loading JSON data into MySQL**, training a classificatio
 
 ---
 
-## 🔄 Workflow Diagram
-
-```mermaid
-flowchart LR
-    A[📂 JSON Files] -->|Load with Python| B[(🗄️ MySQL Database)]
-    B -->|Fetch Data| C[⚙️ Python Preprocessing]
-    C --> D[🤖 ML Model Training]
-    D -->|Save| E[(📦 model.pkl & scaler.pkl)]
-    E -->|Use in| F[🌐 Streamlit App]
-    F -->|Predict| G[✅ Loan Status]
